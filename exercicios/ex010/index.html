@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público do professor Gustavo Guanabara no Github</a><br> (Aqui estou usando o target = "_blank" e rel = "external" na tag &lt;a&gt;. O que, nesse caso, vai fazer com que eu acesse o link através de uma nova aba, mantendo meu site aberto na aba atual)</p>
+    <p>Você também pode acessar o <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">canal gratuito do professor no YouTube</a><br>
+    (Aqui não estou usando o target = "_blank" etc. O que, nesse caso, vai fazer com que eu acesse o link a partir dessa página, saindo do meu site para entrar no outro)</p>
+    <p>O ideal é que se você está indicando um link que direciona o usuário para outro site, que não é o seu, esse link seja aberto em outra aba. Ou seja, utilizando o parâmetro target com o valor "_blank" e o parâmetro rel com o valor "external".</p>
+    <h1>Usando links internos</h1>
+    <p>Você pode acessar a página 002 clicando aqui: <a href="pag002.html"  rel="next">Next</a></p>
+    <p>Você pode acessar a página 003 clicando aqui: <a href="noticias/pag003.html" rel="next">Next</a></p>
+    <h1>Você pode baixar arquivos através de links</h1>
+    <p>Clique aqui para baixar um livro. <a href="livros/meulivro.pdf" download="meulivro.pdf" target="_blank" type="application/pdf">[Baixar PDF do livro]</a></p>
+    <p>Clique aqui para baixar um ZIP do livro. <a href="livros/meulivro.zip" download="meulivro.zip" type="application/zip">[Baixar ZIP do livro]</a></p>
+</body>
+</html>

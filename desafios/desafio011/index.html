@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 11</title>
+    <style>
+        body {
+            background-image: url('imagens/espaco.jpg'); /* Define uma imagem de fundo para o corpo da página */
+            background-size: cover;                      /* Faz a imagem de fundo cobrir toda a tela (pode cortar partes) */
+            background-repeat: no-repeat;                /* Impede que a imagem de fundo se repita */
+            height: 100vh;                               /* Define a altura do body como 100% da altura da tela (viewport height) */
+            margin: 0;                                   /* Remove a margem padrão do navegador */
+
+            /* Centralização usando Flexbox */
+            display: flex;                               /* Ativa o modelo Flexbox no body */
+            justify-content: center;                     /* Centraliza horizontalmente o conteúdo (nesse caso, o picture com a imagem) */
+            align-items: center;                         /* Centraliza verticalmente o conteúdo */
+        }
+
+        img {
+            max-width: 100%;                             /* Garante que a imagem nunca ultrapasse 100% da largura do elemento pai */
+            height: auto;                                /* Mantém a proporção da imagem ao redimensionar */
+        }
+    </style>
+</head>
+<body>
+    <picture>
+        <source media="(max-width: 600px)" srcset="imagens/astronauta-pp.png">
+        <source media="(max-width: 1200px)" srcset="imagens/astronauta-p.png">
+        <img src="imagens/astronauta.png" alt="Astronauta">
+    </picture>
+</body>
+</html>
